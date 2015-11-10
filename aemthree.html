@@ -1,5 +1,27 @@
-<div>
-  <h1>AEM Three</h1>
-
-  <p>AEM Three static page.</p>
+<div class="main">
+  <modelview></modelview>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Model Settings</div>
+    <div class="panel-body">
+      <accountselection></accountselection>
+      <lineselection></lineselection>
+      <matrixdemo></matrixdemo>
+    </div>
+  </div>
+  <selection></selection>
+  <div class="panel panel-primary">
+    <div class="panel-heading">Cart Summary</div>
+    <div class="panel-body summary-lines">
+      <lineview></lineview>
+      <lineselection></lineselection>
+      <button type="button" class="btn btn-danger" ng-click="clearCart()">Clear</button>
+    </div>
+  </div>
+  <geolocation></geolocation>
 </div>
+
+<style>
+  .summary-lines {
+    padding: 30px;
+  }
+</style>
